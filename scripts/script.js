@@ -1,4 +1,5 @@
 const addButton = document.querySelector("#add");
+const clearButton = document.querySelector("#clear");
 const lots = document.querySelector("#lots");
 
 addButton.addEventListener("click", () => {
@@ -112,4 +113,16 @@ addButton.addEventListener("click", () => {
   });
 
   lots.appendChild(lot);
+});
+
+clearButton.addEventListener("click", () => {
+  const confirmation = confirm(
+    "Шумо мутмаинед, ки мехоҳед ҳамаи партияҳоро нест кунед?"
+  );
+
+  if (!confirmation) {
+    return;
+  }
+
+  lots.innerHTML = "";
 });
