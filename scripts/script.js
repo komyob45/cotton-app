@@ -6,36 +6,26 @@ addButton.addEventListener("click", () => {
   const lot = document.createElement("li");
 
   lot.innerHTML = `
-    <div>
-      <label>
-        Рамзи истеҳсолкуда
-        <input type="number" class="manufacturer-code" />
-      </label>
-    </div>
-    <div>
-      <label>
-        Рақами партия
-        <input type="number" class="lot-number" />
-      </label>
-    </div>
-    <div>
-      <label>
-        Вазн (кг)
-        <input type="number" class="weight" />
-      </label>
-    </div>
-    <div>
-      <label>
-        Миқдори тойҳо
-        <input type="number" class="bales-quantity" />
-      </label>
-    </div>
-    <div>
-      <label>
-        Миқдори намунаҳои гирифташуда
-        <input type="number" class="selected-samples-quantity" />
-      </label>
-    </div>
+    <label>
+      Рамзи истеҳсолкуда
+      <input type="number" class="manufacturer-code" />
+    </label>
+    <label>
+      Рақами партия
+      <input type="number" class="lot-number" />
+    </label>
+    <label>
+      Вазн (кг)
+      <input type="number" class="weight" />
+    </label>
+    <label>
+      Миқдори тойҳо
+      <input type="number" class="bales-quantity" />
+    </label>
+    <label>
+      Миқдори намунаҳои гирифташуда
+      <input type="number" class="selected-samples-quantity" />
+    </label>
     <ul class="samples"></ul>
     <button class="add-sample">Намунаи нав</button>
     <button class="delete">Нест кардан</button>
@@ -48,31 +38,29 @@ addButton.addEventListener("click", () => {
     const sample = document.createElement("li");
 
     sample.innerHTML = `
-      <div>
-        <label>
-          Миқдори намуд
-          <input type="number" class="sample-quantity" />
-        </label>
-        <label>
-          Навъ аз рӯи ранг
-          <select class="color">
-            <option value="SM">SM</option>
-            <option value="SMSp">SMSp</option>
-          </select>
-        </label>
-        <label>
-          Навъ аз рӯи гаджнокӣ
-          <input type="number" class="sample-quality" />
-        </label>
-        <label>
-          Дарозии штапелӣ
-          <input type="number" class="sample-staple-length" />
-        </label>
-        <label>
-          Нишондиҳандаи микронейр
-          <input type="number" class="sample-micronaire-indicator" />
-        </label>
-      </div>
+      <label>
+        Миқдори намуд
+        <input type="number" class="sample-quantity" />
+      </label>
+      <label>
+        Навъ аз рӯи ранг
+        <select class="color">
+          <option value="SM">SM</option>
+          <option value="SMSp">SMSp</option>
+        </select>
+      </label>
+      <label>
+        Навъ аз рӯи гаджнокӣ
+        <input type="number" class="sample-quality" />
+      </label>
+      <label>
+        Дарозии штапелӣ
+        <input type="number" class="sample-staple-length" />
+      </label>
+      <label>
+        Нишондиҳандаи микронейр
+        <input type="number" class="sample-micronaire-indicator" />
+      </label>
       <button class="delete-sample">Нест кардани намуна</button>
     `;
 
